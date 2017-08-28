@@ -1,2 +1,4 @@
 # hello-world
-just usual start
+just starting to learn git
+dont know much about git
+started with github
