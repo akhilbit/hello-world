@@ -1,1 +1,38 @@
-New File a
+func divide(_ num: Int) -> Array<Int>{
+    var n = num
+    var arr = [Int]()
+    var new = n%1000
+    n/=1000
+    arr.append(new)
+    while n>0 {
+        new = n%100
+        n/=100
+        arr.append(new)
+        
+    }
+    return arr
+}
+
+
+let zeroth_digit = ["","one","two","three","four","five","six","seven","eight","nine"]
+let teen_digit = ["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
+let tenth_digit = [2:"twenty",3:"thirty",4:"fourty",5:"fifty",6:"sixty",7:"seventy",8:"eighty",9:"ninenty"]
+let higher_digit = [1:"thousand",2:"lakh",3:"crore"]
+func numtoword(_ num: Int,_ index: Int) -> String{
+    var value = ""
+    
+    return value
+}
+
+func wording(_ num: Int) {
+    let arr = divide(num)
+    var value = ""
+    print(arr)
+    let c = arr.count
+    for i in arr {
+        value += numtoword(i,c) + " "
+        c-=1
+    }
+}
+
+wording(324632)
